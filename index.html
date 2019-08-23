@@ -3,86 +3,87 @@
 <link rel="stylesheet" href="styles.css">
 <head>
     <meta charset="UTF-8">
-    <title>Calculator</title>
+    <title>Calculator </title>
 </head>
 <body>
 <header>
     <h1>Calculator</h1>
 </header>
 <section>
-    <input type="text" placeholder="0">
+    <input type="text" placeholder="0" disabled value="" id="input">
     <table>
         <tr>
             <td>
-                <button class="otherOperations">AC</button>
+                <button class="otherOperations" onclick="clearInput()">AC</button>
             </td>
             <td>
-                <button class="otherOperations">Del</button>
+                <button class="otherOperations" onclick="del()">Del</button>
             </td>
             <td>
-                <button class="otherOperations">%</button>
+                <button class="otherOperations" onclick="changeMinus()">+/-</button>
             </td>
             <td>
-                <button class="mathOperation">/</button>
+                <button class="mathOperation" onclick="operation('/')">/</button>
             </td>
         </tr>
         <tr>
             <td>
-                <button>7</button>
+                <button onclick="number(7)">7</button>
             </td>
             <td>
-                <button>8</button>
+                <button onclick="number(8)">8</button>
             </td>
             <td>
-                <button>9</button>
+                <button onclick="number(9)">9</button>
             </td>
             <td>
-                <button class="mathOperation">x</button>
+                <button class="mathOperation" onclick="operation('x')">x</button>
             </td>
         </tr>
         <tr>
             <td>
-                <button>4</button>
+                <button onclick="number(4)">4</button>
             </td>
             <td>
-                <button>5</button>
+                <button onclick="number(5)">5</button>
             </td>
             <td>
-                <button>6</button>
+                <button onclick="number(6)">6</button>
             </td>
             <td>
-                <button class="mathOperation">-</button>
+                <button class="mathOperation" onclick="operation('-')">-</button>
             </td>
         </tr>
         <tr>
             <td>
-                <button>1</button>
+                <button onclick="number(1)">1</button>
             </td>
             <td>
-                <button>2</button>
+                <button onclick="number(2)">2</button>
             </td>
             <td>
-                <button>3</button>
+                <button onclick="number(3)">3</button>
             </td>
             <td>
-                <button class="mathOperation">+</button>
+                <button class="mathOperation" onclick="operation('+')">+</button>
             </td>
         </tr>
         <tr>
-                <button id="zero">0</button>
+                <button id="zero" onclick="number(0)">0</button>
 
             <td>
             </td>
             <td>
             </td>
             <td>
-                <button>.</button>
+                <button onclick="number('.')">.</button>
             </td>
             <td>
-                <button class="mathOperation">=</button>
+                <button class="mathOperation" onclick="result()">=</button>
             </td>
         </tr>
     </table>
 </section>
+<script type="application/javascript" src="scripts.js"></script>
 </body>
 </html>
