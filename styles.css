@@ -3,7 +3,7 @@ body, html, section, h1, input, td, button {
     padding: 0;
 }
 
-aside, article, section, header, footer, nav, {
+aside, article, section, header, footer, nav {
     display: block;
 }
 
